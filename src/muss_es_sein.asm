@@ -5,31 +5,26 @@ section .text
     global _start
 
 _start:
-    ; Loop 3 times
     mov ecx, 3
 
 repeat_message:
-    ; Print the message
-    mov eax, 4         ; System call number for sys_write
-    mov ebx, 1         ; File descriptor 1 is stdout
-    mov ecx, msg       ; Pointer to the message
-    mov edx, 45        ; Length of the message
-    int 0x80           ; Interrupt to invoke system call
+    mov eax, 4         
+    mov ebx, 1         
+    mov ecx, msg       
+    mov edx, 45        
+    int 0x80           
 
-    ; Print a newline character
-    mov eax, 4         ; System call number for sys_write
-    mov ebx, 1         ; File descriptor 1 is stdout
-    mov ecx, newline   ; Pointer to the newline character
-    mov edx, 1         ; Length of the newline character
-    int 0x80           ; Interrupt to invoke system call
+    mov eax, 4         
+    mov ebx, 1         
+    mov ecx, newline   
+    mov edx, 1         
+    int 0x80           
 
-    ; Decrement the loop counter
     loop repeat_message
 
-    ; Exit the program
-    mov eax, 1         ; System call number for sys_exit
-    xor ebx, ebx       ; Exit code 0
-    int 0x80           ; Interrupt to invoke system call
+    mov eax, 1         
+    xor ebx, ebx       
+    int 0x80           
 
 section .data
-    newline db 10      ; ASCII code for newline
+    newline db 10      
