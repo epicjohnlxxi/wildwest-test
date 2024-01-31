@@ -12,9 +12,9 @@ I have always been fascinated by the concept of the
 Wild West era (probably since Age 8), and decided I
 wanted to make a game out of it.
 
-An more interactable and 3D version of this game will
+A more interactable and 3D version of this game will
 be made soon using the Unity Engine, with the help of
-my friends, at some point. Most likely when I'm done
+my friends at some point. Most likely when I'm done
 with all of my other games. So hopefully I'll be done
 with them sooner or later.
 
